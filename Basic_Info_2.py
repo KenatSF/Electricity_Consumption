@@ -1,6 +1,7 @@
 import pandas as pd
 import re
 from itertools import compress
+from Tool_1_Find_The_Country import Word_Searcher as wsk
 
 df = pd.read_csv("data/World Energy Consumption.csv", encoding = "ISO-8859-1", engine='python')
 
@@ -45,29 +46,19 @@ old_specific_countries_names = ['Sweden', 'Singapore', 'Czech Republic', 'Hong K
                             'Canada', 'France', 'Iceland', 'Ireland', 'Belgium', 'Austria', 'China', 'Germany',
                             'Denmark', 'Japan', 'Luxembourg', 'Israel', 'Finland', 'Netherlands', 'Switzerland',
                             'Australia']
-def find_the_patter(chain, pattern):
-    return bool(re.search(pattern, chain))
 
-def find_inside_list(word_to_seek):
-    result = [find_the_patter(p, word_to_seek) for p in sorted(countries_names)]
-    value = any(result)
-    #print("Country: {} is: {}".format(word_to_seek, value))
-    return value
+print("Countries to study inside this new database from the last database:")
+searcher = wsk(countries_names)
+searcher_booleans = searcher.find_entire_list(old_specific_countries_names)
+new_new_specific_countries_names = list(compress(old_specific_countries_names, searcher_booleans))
+print(new_new_specific_countries_names)
+
 
 #       Find a if there is a specific country
 #print("Find a if there is a specific country")
-#print(find_inside_list("United States"))
+#print(searcher.find_inside_list("United States"))
 
-trues_variables = list(map(find_inside_list, old_specific_countries_names))
 
-new_specific_countries_names = list(compress(old_specific_countries_names, trues_variables))
-#print("Comparing length:")
-#print(len(old_specific_countries_names))
-#print(len(trues_variables))
-#print(len(new_specific_countries_names))
-
-#print("Countries to study inside this new database from the last database:")
-#print(new_specific_countries_names)
 
 # In function of the countries found in the last data base, we are gonna focus on those ones
 # Note: In the last data base USA wasn't inside, but here this countries it does inside this one
