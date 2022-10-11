@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc5d00b8-515e-4f27-b42f-169056bcf4a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Exploratory_Analysis_3-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Exploratory_Analysis_3-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic_Info_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic_Info_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exploratory_Analysis_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Exploratory_Analysis_3.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,25 +145,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1665464072227" />
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1665467291142">
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1665514494779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665467291142" />
-    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1665467291142">
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665514494779" />
+    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1665514494778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665467291142" />
-    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1665467291142">
+    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665514494778" />
+    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1665514494778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665467291142" />
-    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1665467291142">
+    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665514494778" />
+    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1665514494778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665467291142" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1665461439528">
+    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665514494778" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1665508865884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665461439528" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665508865884" />
   </component>
 </project>
