@@ -13,10 +13,16 @@ print(df.shape)
 #       Data get columns with null data
 print("Number of null: ")
 
+
 #       Get rid of a useless column
 df = df[df.columns.difference(['iso_code'])]
 
+
+#       Columns names
 columns_names = df.columns.tolist()
+
+
+#       Columns with null data
 null_columns = []
 for i in range(df.shape[1]):
     if(df.iloc[:, i].isnull().values.any()):
@@ -31,46 +37,36 @@ print(" Columns name with no null rows")
 no_null_columns = list(set(columns_names) - set(null_columns))
 print(no_null_columns)
 
+
 #       Exploring year column     -> 1900 init year; 2020 end year; Different years: 2020 only 69 obs
 print("Exploring year column  \n")
 print(df.year.describe())
 print(df.year.apply(str).value_counts())
+
 
 #       Exploring country column  -> 242 countries
 print("Exploring country column \n")
 countries_names = df.country.value_counts().index.tolist()      # -> Global variable
 print(df.country.value_counts())
 
-#    Making sure that these specific countries to study are actually in this data base. Note:There was a change of plans
-old_specific_countries_names = ['Sweden', 'Singapore', 'Czech Republic', 'Hong Kong', 'Norway', 'United Kingdom',
-                            'Canada', 'France', 'Iceland', 'Ireland', 'Belgium', 'Austria', 'China', 'Germany',
-                            'Denmark', 'Japan', 'Luxembourg', 'Israel', 'Finland', 'Netherlands', 'Switzerland',
-                            'Australia']
 
-print("Countries to study inside this new database from the last database:")
+#       Selecting the countries to study
+# We have to make sure that these countries, actually are inside the data-base
+# Note: In the last data base USA wasn't inside, but here, this country it does inside this data-base
+specific_countries_names = ['Sweden', 'Singapore', 'Switzerland', 'Netherlands', 'Finland',
+                            'Algeria', 'Ethiopia', 'Myanmar',
+                            'United States', 'Russia', 'China']
+
+
 searcher = wsk(countries_names)
-searcher_booleans = searcher.find_entire_list(old_specific_countries_names)
-new_new_specific_countries_names = list(compress(old_specific_countries_names, searcher_booleans))
-print(new_new_specific_countries_names)
+searcher_booleans = searcher.find_entire_list(specific_countries_names)
+new_specific_countries_names = list(compress(specific_countries_names, searcher_booleans))
+print("Countries to study inside this new database from the last database:")
+print(new_specific_countries_names)
 
 
 #       Find a if there is a specific country
 #print("Find a if there is a specific country")
 #print(searcher.find_inside_list("United States"))
-
-
-
-# In function of the countries found in the last data base, we are gonna focus on those ones
-# Note: In the last data base USA wasn't inside, but here this countries it does inside this one
-specific_countries_names = ['Sweden', 'Singapore', 'Switzerland', 'Netherlands', 'Finland',
-                            'United States', 'Russia', 'China']
-print("Final Countries to study inside this new database from the last database:")
-print(specific_countries_names)
-
-print(df.year.dtypes)
-
-print(df.primary_energy_consumption.describe())
-
-
 
 
