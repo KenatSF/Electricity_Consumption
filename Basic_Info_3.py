@@ -24,17 +24,41 @@ print("     Countries exploration")
 countries_names = df['country_long'].value_counts().index.tolist()
 print("Countries total in the database {}".format(len(countries_names)))
 
+#       -> 5.-  Selecting the countries to study
+# We have to make sure that these countries, actually are inside the data-base
 from Tool_1_Find_The_Country import Word_Searcher as wsk
 searcher = wsk(countries_names)
 
-countries_to_watch = ['Sweden', 'Singapore', 'Switzerland', 'Netherlands', 'Finland', 'Algeria', 'Ethiopia', 'Myanmar',
-                       'United States of America', 'China', 'Russia']
+countries_to_watch = ['Sweden', 'Singapore', 'Switzerland', 'Netherlands', 'Finland',
+                      'Algeria', 'Ethiopia', 'Myanmar',
+                      'United States of America', 'China', 'Russia']
 searcher_booleans = searcher.find_entire_list(countries_to_watch)
 countries_names_to_watch = list(compress(countries_to_watch, searcher_booleans))        # -> All countries are loaded
+print("     Countries to study inside this new database from the last database:")
+print(countries_names_to_watch)
 
 
-#       -> 5.-
+#       -> 6.-
 print("     Type of energy exploration")
-print(df.primary_fuel.value_counts())
+#fuel_type = df.primary_fuel.value_counts().index.tolist()[0:6]
+fuel_type = ['Solar', 'Gas']
+print(fuel_type)
+
+#       -> 7.-
+print("     Final countries to invest")
+countries_to_invest = ['Sweden', 'Singapore', 'Switzerland', 'Netherlands', 'Finland', 'United States of America']
+
+
+
+
+df_clean = df.loc[df['owner of plant'].notnull(), ]
+
+df_clean = df_clean[df_clean['country_long'].isin(countries_to_invest)]
+df_clean = df_clean[df_clean['primary_fuel'].isin(fuel_type)]
+
+print(df_clean.country_long.value_counts())
+print(df_clean.shape)
+
+
 
 
