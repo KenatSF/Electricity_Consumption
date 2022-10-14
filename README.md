@@ -4,9 +4,10 @@
 
 ## Resources
 
-* Db1: [https://www.kaggle.com/datasets/youneseloiarm/innovations-indices-and-pollution-index](Innovations indices and Pollution index )
-* Db2: [https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption](World Energy Consumption)
-* Db3: [https://www.kaggle.com/datasets/ramjasmaurya/global-powerplants](Global Power-Plants)
+* Db1: [Innovations indices and Pollution index](https://www.kaggle.com/datasets/youneseloiarm/innovations-indices-and-pollution-index)
+* Db2: [World Energy Consumption](https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption)
+* Db3: [Global Power-Plants](https://www.kaggle.com/datasets/ramjasmaurya/global-powerplants)
+
 ## Project
 
 Existen varias formas de generar electricidad, algunos ejemplos son: energía solar, hidráulica, gas, nuclear, petróleo, etc. Buscamos encontrar aquellas empresas que puedan tener potencial de crecer en los próximos años y que puedan revolucionar, tal vez, su propia industria en búsqueda de un mayor crecimiento.
