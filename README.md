@@ -9,10 +9,10 @@
 * Db3: [https://www.kaggle.com/datasets/ramjasmaurya/global-powerplants](Global Power-Plants)
 ## Project
 
-Existen varias formas de generar electricidad, algunos ejemplos son: energía solar, hidráulica, gas, nuclear, petróleo, etc. Buscamos encontrar aquellas empresas que puedan tener ese potencial de crecer en los próximos años y que puedan revolucionar, tal vez, su propia industria en búsqueda de un mayor crecimiento a través de la generación de electricidad. Esta búsqueda se va a realizar analizando tres bases de datos que ayuden a vislumbrar el panorama de la generación de esta energía y ver hacia donde se dirige.
+Existen varias formas de generar electricidad, algunos ejemplos son: energía solar, hidráulica, gas, nuclear, petróleo, etc. Buscamos encontrar aquellas empresas que puedan tener potencial de crecer en los próximos años y que puedan revolucionar, tal vez, su propia industria en búsqueda de un mayor crecimiento.
 
 
-Las empresas a tomar en cuanta en los próximos años, son;
+Después de análisis, se encontró que las empresas a tomar en cuanta en los próximos años, son:
 
 * Suecia:
   * Fortum
